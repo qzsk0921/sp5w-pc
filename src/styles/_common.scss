@@ -1,0 +1,26 @@
+@import './variables.scss';
+// $baseFontSize: 150px;
+
+// px to rem
+@function px2Rem ($px) {
+  @return #{$px / $ue-width * 10}rem;
+}
+
+// equal width and height
+@mixin equalWH ($val) {
+  width: $val;
+  height: $val;
+}
+
+
+/// placeHold  color
+@mixin placeHoldColor ($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+
+/// 清除文字padding
+@mixin clearFontPadding () {
+  line-height: 1;
+}

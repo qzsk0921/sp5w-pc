@@ -1,0 +1,57 @@
+@mixin pcMedia {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+  @media screen and (max-height: 768px) {
+    html {
+      min-height: 768px;
+    }
+  }
+}
+
+
+// //pc media
+// @mixin pcMedia {
+
+//     @media screen and (min-width: 960px) {
+//       @content;
+//     }
+  
+//   }
+  
+//   //mobile media
+//   @mixin mobileMedia {
+  
+//     @media screen and (max-width: 959px) {
+//       @content;
+//     }
+  
+//   }
+  
+//   // set font size
+//   @mixin setFontSize {
+  
+//     @media screen and (min-width: 768px) and (max-width: 959px){
+//       html{
+//         font-size: 108px !important;
+//       }
+//     }
+  
+//     @media screen and (min-width: 414px) and (max-width: 767px){
+//       html{
+//         font-size: 83.60px !important;
+//       }
+//     }
+  
+//     @media screen and (min-width: 375px) and (max-width: 413px){
+//       html{
+//         font-size: 75px !important;
+//       }
+//     }
+  
+//     @media screen and (max-width: 374px) {
+//       html{
+//         font-size: 64px !important;
+//       }
+//     }
+//   }
